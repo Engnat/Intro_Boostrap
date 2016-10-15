@@ -9,109 +9,114 @@
   <link rel="stylesheet" href="./css/main.css">
   <script src="./js/jquery.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
-
+  <script src="./js/main2.js"></script>
 </head>
 <body>
 <ul class="nav nav-tabs">
-  <li><a href="#">Home</a></li>
-  <li class="dropdown">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
-      Products <span class="glyphicon glyphicon-menu-down"></span>
-    </a>
-    <ul class="dropdown-menu">
-      <li><a href="#">Action</a></li>
-      <li class="disabled"><a href="#">Games</a></li>
-      <li><a href="#">Office</a></li>
-      <li><a href="#"></a></li>
-      <li class="divider"></li>
-      <li><a href="#">Men</a></li>
-      <li><a href="#">Girl</a></li>
-    </ul>
-  </li>
-  <li><a href="#">Stores</a></li>
-  <li><a href="#">About Us</a></li>
-  <li><a href="#">Contacts</a></li>
+        <li><a href="#">Home</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+              Products <span class="glyphicon glyphicon-menu-down"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li class="disabled"><a href="#">Games</a></li>
+              <li><a href="#">Office</a></li>
+              <li><a href="#"></a></li>
+              <li class="divider"></li>
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Girl</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Stores</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contacts</a></li>
+
+        <!--Modal registro e ingreso-->
+        <li><a href="#" data-toggle="modal" data-target="#miModal">Ingreso</a></li>
+        <li><a href="">Registro</a></li>
 </ul>
 
 
-  <!-- <h1 class="text-right"> Titulo 1 <small>complemento</small></h1>
-  <h1 class="text-center"> Titulo 1 <big>complemento</big></h1>
-  <h2 class="text-center text-uppercase"> Titulo 1 <small>complemento</small></h2>
-  <h3> Titulo 1 <small>complemento</small></h3>
-  <h4> Titulo 1 <small>complemento</small></h4>
-  <h5> Titulo 1 <small>complemento</small></h5>
-  <h6> Titulo 1 <small>complemento</small></h6>
+<div id="miModal" class="modal fade"><!--bootstrap class-->
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal"><span>&times;</span></button>
+          <h4 class="modal-title" align="center">Iniciar Sesión</h4>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+              <div class="col-md-offset-3 col-md-6">
+                  <div class="form-group">
+                    <label>Usuario o Correo electrónico</label>
+                    <input type="email" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control">
+                  </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Aceptar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <section class="products container">
+  <section class="container">
     <div class="row">
-      <ul class="list-unstyled col-md-offset-2 col-md-8 col-xs-12 col-sm-10 col-lg-6">
-        <li class="col-md-4 col-xs-4"></li>
-        <li class="col-md-2 col-xs-4"></li>
-        <li class="col-md-2 col-xs-4"></li>
-        <li class="black-sheep col-md-push-2 col-md-2 col-xs-4"></li>
-        <li class="col-md-2 col-md-pull-2 col-xs-4"></li>
-        <li class="col-md-2 col-xs-4"></li>
-        <li class="col-md-2 col-xs-4"></li>
-      </ul>
+      <div class="col-md-offset-2 col-md-8">
+          <div class="panel-group" id="acordion">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a href="#panel1" data-toggle="collapse" data-parent="#acordion">
+                    Desarrollo de Apps
+                  </a>
+                </h4>
+              </div>
+              <div class="panel-collapse collapse in" id="panel1">
+                <div class="panel-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a href="#panel2" data-toggle="collapse" data-parent="#acordion">
+                    Desarrollo de Apps
+                  </a>
+                </h4>
+              </div>
+              <div class="panel-collapse collapse " id="panel2">
+                <div class="panel-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a href="#panel3"  data-toggle="collapse" data-parent="#acordion">
+                    Desarrollo de Apps
+                  </a>
+                </h4>
+              </div>
+              <div class="panel-collapse collapse " id="panel3">
+                <div class="panel-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
     </div>
+
   </section>
-  <section class="products container-fluid">
-    <div class="row">
-      <ul class="col-md-10">
-        <li class="col-md-4"></li>
-        <li class="col-md-2"></li>
-        <li class="col-md-2"></li>
-        <li class="col-md-2"></li>
-        <li class="col-md-2"></li>
-        <li class="col-md-2"></li>
-        <li class="col-md-2"></li>
-      </ul>
-    </div>
-  </section>
-  <section class="container-fluid">
-    <div class="row">
-      <table class="table table-bordered table-striped table-condensed">
-        <thead>
-          <tr>
-            <th>1</th>
-            <th>2</th>
-            <th>3</th>
-            <th>4</th>
-            <th>5</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="danger">
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-          </tr>
-          <tr class="warning">
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-          </tr>
-          <tr class="info">
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section> -->
+
 </body>
 </html>
