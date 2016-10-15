@@ -51,10 +51,11 @@ $(document).ready(function(){
   google_link.on("click" , function(eventObject){
     eventObject.preventDefault();
     eventObject.stopPropagation();
-    google_link.hide(1000);
+    /*google_link.hide(1000);
     google_link.show(2000);
     google_link.slideUp(3000).delay(3000);
-    google_link.slideDown(4000).delay(4000);
+    google_link.slideDown(4000).delay(4000);*/
+    dom_ul.toggleClass("Little-list other-class");
   });
 
   //dom_ul.addClass("Little-list");
