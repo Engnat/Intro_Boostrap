@@ -57,9 +57,9 @@ $(document).ready(function(){
     google_link.slideDown(4000).delay(4000);
   });
 
-  dom_ul.addClass("Little-list");
-  dom_ul.removeClass("Little-list");
-  dom_ul.toggleClass("Little-list");
+  //dom_ul.addClass("Little-list");
+  //dom_ul.removeClass("Little-list");
+  //dom_ul.toggleClass("Little-list");
 });
 
 /*document.addEventListener("DOMContentLoaded", function(){
